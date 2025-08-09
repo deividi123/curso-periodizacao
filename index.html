@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Curso: Periodização no Fisiculturismo</title>
- <style>
-  :root {
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Curso Periodização no Fisiculturismo - Nutricionista Deividi S.F.</title>
+<meta name="description" content="Aprenda a periodizar treinos e dietas no fisiculturismo com estratégias práticas para bulking, cutting, finalização e pós-competição. Curso online com 6 meses de acesso." />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="nutricionista, personal trainer, periodização de treino, periodização do treino, categorias do fisiculturismo, dieta cutting, dieta bulking, divisao de treino, fisiculturismo categorias, categorias do fisiculturismo, cutting feminino dieta, pre contest, dieta de cutting, dieta para cutting, dieta de bulking, dieta para bulking, periodização do treinamento, periodização do treino, periodização de dieta, periodização na dieta, curso online fisiculturismo, curso de fisiculturismo, curso de cutting, curso para cutting, curso de bulking, curso para bulking" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Curso Periodização no Fisiculturismo - Nutricionista Deividi S.F." />
+<meta property="og:description" content="Aprenda a periodizar treinos e dietas no fisiculturismo com estratégias práticas para bulking, cutting, finalização e pós-competição." />
+<meta property="og:image" content="https://i.imgur.com/9PJVEnR.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://seusite.com.br/periodizacao-fisiculturismo" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Curso Periodização no Fisiculturismo - Nutricionista Deividi S.F." />
+<meta name="twitter:description" content="Aprenda a periodizar treinos e dietas no fisiculturismo com estratégias práticas para bulking, cutting, finalização e pós-competição." />
+<meta name="twitter:image" content="https://i.imgur.com/9PJVEnR.png" />
+
+<!-- JSON-LD dados estruturados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Curso Periodização no Fisiculturismo",
+  "description": "Aprenda a periodizar treinos e dietas no fisiculturismo com estratégias práticas para bulking, cutting, finalização e pós-competição.",
+  "provider": {
+    "@type": "Person",
+    "name": "Deividi S. Ferreira",
+    "sameAs": [
+      "https://instagram.com/nutrideividisf",
+      "https://wa.me/5517991095961"
+    ]
+  }
+}
+</script>
+
+<style>
+:root {
     --green: #19e671;
     --green-dark: #0bc15c;
     --bg: #101614;
@@ -14,368 +49,299 @@
     --gray: #d0ded2;
     --radius: 22px;
     --shadow: 0 6px 28px #000a;
-    --max-width: 700px;
+    --max-width: 1000px;
     --button: #ff7f00;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--white);
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    text-align: center; /* Centraliza todos os textos do body */
-  }
-
-  .carousel-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carousel {
-    width: 100%;
-    max-width: var(--max-width);
-    height: auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card {
-    display: none;
-    background: var(--surface);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    padding: 2em;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 80vh;
-    margin: auto;
-    overflow-y: auto;
-    text-align: center; /* Centraliza textos dentro dos cards */
-  }
-
-  .card.active {
-    display: block;
-    animation: fadeIn 0.4s ease-in-out;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.98); }
-    to { opacity: 1; transform: scale(1); }
-  }
-
-  .nav-buttons {
-  display: none !important;
 }
 
-  .nav-button {
-    background: var(--green);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.2em;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-  }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-  .nav-button:hover {
-    opacity: 1;
-  }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-  .dots {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
+section {
+    padding: 40px 16px;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--green);
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     text-align: center;
-  }
+}
 
-  .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 4px;
-    background: var(--gray);
-    border-radius: 50%;
-  }
+.hero img {
+    width: 90vw;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
 
-  .dot.active {
-    background: var(--green);
-  }
+.hero-content {
+    max-width: 480px;
+}
 
-  .hero-img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto 1em;
-    display: block;
-    border-radius: 8px;
-  }
+.price-offer {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
 
-  .price-offer {
-    color: var(--button);
-    font-size: 1.15rem;
-    margin-bottom: 8px;
-  }
-
-  .old-price {
-    color: #a09a90;
-    text-decoration: line-through;
-  }
-
-  .price-badge {
+.price-badge {
     background: var(--button);
     color: var(--white);
     border-radius: 13px;
     padding: 4px 12px;
-    margin-left: 10px;
     font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .btn {
-    background: var(--green);
-    color: #101614;
-    font-weight: bold;
-    font-size: 1.05rem;
-    padding: 0.9em 1.2em;
-    border-radius: 14px;
-    border: none;
-    box-shadow: 0 2px 16px #19e67145;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    margin: 1em auto 0;
-    text-decoration: none;
-    max-width: 280px;
-  }
-
-.carousel-container {
-  cursor: grab;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-  h2 {
-    color: var(--green);
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 26px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: var(--green);
+    color: #101614;
+    border-radius: 14px;
+    text-decoration: none;
+    box-shadow: 0 2px 16px #19e67145;
+    transition: transform 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+}
 
-  ul {
+.btn:hover,
+.btn:focus {
+    background: var(--green-dark);
+    transform: scale(1.05);
+    outline: none;
+}
+
+ul {
     list-style: none;
-    padding: 0;
-  }
+    padding-left: 0;
+    margin: 0;
+}
 
-  ul li {
-    margin-bottom: 0.5em;
-  }
+ul li {
+    margin-bottom: 12px;
+}
 
-  @media (max-width: 768px) {
-    .card {
-      width: 95vw;
-      padding: 1.5em 1em;
+.benefits, .modules, .faq, .guarantee, .plans, .about {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 30px 24px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+}
+
+.about {
+    text-align: center;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.about img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    box-shadow: 0 2px 24px #19e671aa;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.social a {
+    display: inline-block;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+@media (min-width: 600px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        gap: 60px;
     }
-    .btn {
-      width: 90%;
-      max-width: 90%;
-      margin: 1em auto 0;
+    .hero img {
+        width: 400px;
+        flex-shrink: 0;
     }
-    .nav-buttons {
-      display: none;
+    .hero-content {
+        max-width: 480px;
     }
-  }
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    p, li {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 900px) {
+    section {
+        padding: 60px 20px;
+    }
+}
 </style>
-
 </head>
 <body>
-  <div class="carousel-container" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
-    <div class="carousel" id="carousel">
-      <div class="card active">
-        <img src="https://imgur.com/9PJVEnR.png" alt="Curso periodização no fisiculturismo" class="hero-img" />
-        <p>Aprenda a colocar o físico a nível de competição, seja em você ou em seus alunos. Estratégias para o bulking, cutting, finalização e pós competição – Aulas diretas e práticas, tudo explicado sem enrolação.</p><br>
-        <div class="price-offer">
-	<span class="price-badge">6 meses de acesso</span><br><br>
-        <span style="color: #fff;">Apenas R$297 à vista <br> ou em até </span><span style="color: #f6c000;">6x de R$55,72</span><br>
-          
-        </div>
-    <a href="https://pay.kiwify.com.br/GGnsR5e" target="_blank" class="btn" onclick="window.dataLayer = window.dataLayer || []; dataLayer.push({ event: 'fb_initiate_checkout' });">
-  Acessar o curso agora
-</a>
 
-	<i><p>Não recorrente, sem surpresas na sua fatura!<br></i>
+<main>
+
+  <!-- HERO -->
+  <section aria-label="Apresentação do curso Periodização no Fisiculturismo" class="hero">
+    <img src="https://i.imgur.com/9PJVEnR.png" alt="Banner do curso Periodização no Fisiculturismo" loading="lazy" />
+    <div class="hero-content">
+      <p>Aprenda a construir um físico a nível de competição, seja em você ou em seus alunos. Estratégias de treino e dieta para bulking, cutting, finalização e pós-competição – aulas diretas e práticas, sem enrolação.</p>
+      <div class="price-offer">
+        <span class="price-badge">6 meses de acesso</span><br />
+        Apenas R$297 à vista<br />ou em até <span style="color:#f6c000;">6x de R$55,72</span>
       </div>
-
-      <div class="card">
-        <h2>Benefícios</h2>
-        <ul>
-          <li>Conteúdo prático:<strong> Aplicação real no dia a dia</strong></li><br>
-          <li>Sem enrolação:<strong> Aulas direto ao ponto</strong></li><br>
-          <li>Aulas novas toda semana:<strong> Conteúdo atualizado</strong></li><br>
-	  <li>Mais aprendizado: <strong>Mapas mentais pra baixar</strong></li><br>
-	  <li><strong>Em construção</strong> - Agente de IA para dúvidas 24/7</li><br>
-	  <li><strong>Em construção</strong> - Módulo IA para criar conteúdo</li><br>
-	  	
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Módulos Atualizados:</h2>
-        <ul>
-          <li><strong>Fisiculturismo na prática</strong> - 3 Aulas</li>
-	  <li><strong>Bases da Fisiologia e Metabolismo</strong> - 1 Aula</li>
-	  <li><strong>Nutrição aplicada à melhora do físico</strong> - 1 Aula</li>
-	  <li><strong>Estratégias e princípios do treinamento</strong> - 3 Aulas</li> <br>
-		  
-	 <li><i>Atualização mais recente: 02/08</i></li><br>
-	  <li><span style="color: #f6c000;"><i><strong>Próxima aula liberada: 09/08</strong></i></span></li>
-          
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Perguntas Frequentes</h2>
-        <ul>
-          <li><strong><span style="color: #f6c000;">Preciso ser atleta pra entender?</span></strong><br>Não precisa ser atleta, mas aqui você aprende a comer e treinar como um.</li><br>
-          <li><strong><span style="color: #f6c000;">Consigo fazer minha própria preparação?</span></strong><br>Sim, desde que estude com dedicação e aplique o conhecimento com inteligência.</strong></li><li><i>*Não substitui o acompanhamento profissional</i></li><br>
-
-          <li><strong><span style="color: #f6c000;">As aulas são longas?</span></strong><br> Não, o conteúdo é prático e direto ao ponto, aulas com até 10min de duração.</li><br>
-          <li><strong><span style="color: #f6c000;">Serve para mulheres?</span></strong><br> Sim, tanto para homens quanto para mulheres.</li><br>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Garantia</h2>
-        <p>Você tem até 7 dias para assistir algumas aulas e analisar o conteúdo. Se ver que <strong>não é pra você</strong>, basta solicitar o reembolso e terá seu dinheiro de volta sem complicações.</p><br><br>
-        <p><i>*O link para gerenciar sua conta está no email recebido na confirmação de compra</i></p>
-      </div>
-      <div class="card">
-        <h2>Plano Recorrente</h2>
-        <span class="price-badge">30 dias de acesso</span><br><br>
-	<p>Cobrança recorrente, cencele quando quiser</p>
-        <span style="color: #f6c000;">Apenas R$69,90</span> por mês.<br>
-	<a href="https://pay.kiwify.com.br/BqUodcZ" target="_blank" class="btn" onclick="window.dataLayer = window.dataLayer || []; dataLayer.push({ event: 'fb_initiate_checkout' });">
-  Acessar o curso agora</a>
-	<i><p>*O link para gerenciar sua conta está no email recebido na confirmação de compra<br></i>
-      </div>
-
-<!-- Sobre o autor -->
-
-<div class="card" style="text-align:center; position:relative; padding-bottom:90px;">
-  <h2>Sobre o Professor</h2>
-  <img src="https://imgur.com/1ao7XL5.png" alt="Nutricionista Deividi" 
-    style="width:128px;height:128px;border-radius:50%;margin-bottom:18px;box-shadow:0 2px 24px #19e671aa;object-fit:cover;">
-  <p>Prazer sou <strong>Deividi</strong>, Nutricionista e treinador com mais de 7 anos de experiência na área esportiva.<br><br> Ao longo da carreira ajudei centenas de pessoas a alcançarem um físico mais estético e saudável, além disso, atuei na preparação de vários atletas de fisiculturismo, desde naturais estreantes até hormonizados experientes.</p><br><br>
-
-  <!-- Texto acima dos ícones -->
-  <div style="position:absolute; bottom:55px; left:50%; transform:translateX(-50%); font-weight:500; font-size:14px; color:#ccc;">
-    Conheça meu trabalho<br><br>
-  </div>
-
-  <!-- Ícones centralizados -->
-  <div style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:12px;">
-    <!-- WhatsApp -->
-    <a href="https://wa.me/5517991095961?text=Tenho%20dúvidas%20sobre%20o%20curso%20de%20Periodização%2C%20pode%20me%20falar%20mais%3F" target="_blank" style="text-decoration:none;">
-      <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" style="width:32px; height:32px;">
-    </a>
-    
-    <!-- Separador -->
-    <span style="color:#888; font-size:18px;">|</span>
-    
-    <!-- Instagram -->
-    <a href="https://instagram.com/nutrideividisf" target="_blank" style="text-decoration:none;">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" style="width:32px; height:32px;">
-    </a>
-  </div>
-</div>
-
-	
-
+      <a href="https://pay.kiwify.com.br/GGnsR5e" rel="noopener" class="btn" id="btn-avista">
+        Acessar o curso agora
+      </a>
+      <p style="font-size:0.9rem; margin-top:10px;"><i>Não recorrente, sem surpresas na fatura!</i></p>
     </div>
-    <div class="nav-buttons">
-      <button class="nav-button" onclick="prevCard()">←</button>
-      <button class="nav-button" onclick="nextCard()">→</button>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section aria-labelledby="beneficios-title" class="benefits">
+    <h2 id="beneficios-title">Benefícios</h2>
+    <ul>
+      <li>✅ <strong>Conteúdo prático pra aplicar no dia a dia</strong></li>
+      <li>✅ <strong>Aulas direto ao ponto</strong></li>
+      <li>✅ <strong>Conteúdo atualizado semanalmente</strong></li>
+      <li>✅ <strong>Mapas mentais para aprender mais</strong></li>
+      <li>🚀 Em breve: <strong>Agente de IA para dúvidas 24/7</strong></li>
+      <li>🚀 Em breve: <strong>Módulo IA para criar conteúdo</strong></li>
+    </ul>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section aria-labelledby="modulos-title" class="modules">
+    <h2 id="modulos-title">Módulos Atualizados</h2>
+    <ul>
+      <li><strong>Fisiculturismo na prática</strong> - 3 aulas</li>
+      <li><strong>Bases da Fisiologia</strong> - 1 aula</li>
+      <li><strong>Nutrição aplicada</strong> - 1 aula</li>
+      <li><strong>Estratégias e princípios do treino</strong> - 3 aulas</li>
+      <li><strong>Criação de conteúdo com IA</strong></li>
+      <li><i>Última atualização: 09/08</i></li>
+      <li><span style="color:#f6c000;"><i>Próxima aula: 16/08</i></span></li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-labelledby="faq-title" class="faq">
+    <h2 id="faq-title">Perguntas Frequentes</h2>
+    <ul>
+      <li><strong style="color:#f6c000;">Preciso ser atleta?</strong><br> Não, mas você aprenderá a comer e treinar como um.</li>
+      <li><strong style="color:#f6c000;">Posso fazer minha própria preparação?</strong><br> Sim, com estudo e aplicação correta. <i>*Não substitui acompanhamento profissional.</i></li>
+      <li><strong style="color:#f6c000;">As aulas são longas?</strong><br> Não, no máximo 10 minutos cada.</li>
+      <li><strong style="color:#f6c000;">Serve para mulheres?</strong><br> Sim, tanto para homens quanto para mulheres.</li>
+    </ul>
+  </section>
+
+  <!-- GARANTIA -->
+  <section aria-label="Garantia de reembolso do curso" class="guarantee">
+    <h2>Garantia</h2>
+    <p>Você tem até <strong>7 dias</strong> para assistir e avaliar o conteúdo. Se não for para você, solicite o reembolso sem complicações.</p>
+  </section>
+
+  <!-- PLANO RECORRENTE -->
+  <section aria-labelledby="plano-title" class="plans">
+    <h2 id="plano-title">Plano Recorrente</h2>
+    <span class="price-badge">30 dias de acesso</span>
+    <p>Cobrança recorrente, cancele quando quiser.</p>
+    <p><span style="color:#f6c000;">R$69,90</span> por mês.</p>
+    <a href="https://pay.kiwify.com.br/BqUodcZ" rel="noopener" class="btn" id="btn-recorrente">
+      Acessar o curso agora
+    </a>
+  </section>
+
+  <!-- SOBRE O PROFESSOR -->
+  <section aria-labelledby="sobre-professor-title" class="about">
+    <h2 id="sobre-professor-title">Sobre o Professor</h2>
+    <img src="https://i.imgur.com/1ao7XL5.png" alt="Foto do nutricionista e treinador Deividi S. Ferreira" loading="lazy" />
+    <p>Sou <strong>Deividi</strong>, nutricionista e treinador com mais de 7 anos de experiência na área esportiva. Já ajudei centenas de pessoas a conquistarem um físico mais estético e saudável, além de já ter preparado dezenas de atletas de fisiculturismo de várias categorias e níveis diferentes.</p>
+    <div class="social" role="list">
+      <a href="https://wa.me/5517991095961?text=Tenho%20dúvidas%20sobre%20o%20curso%20de%20Periodização%2C%20pode%20me%20falar%20mais%3F" target="_blank" rel="noopener" aria-label="WhatsApp do Deividi">
+        <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="Ícone do WhatsApp" loading="lazy" />
+      </a>
+      <a href="https://instagram.com/nutrideividisf" target="_blank" rel="noopener" aria-label="Instagram do Deividi">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Ícone do Instagram" loading="lazy" />
+      </a>
     </div>
-    <div class="dots" id="dots"></div>
-  </div>
+  </section>
 
-  <script>
-    const cards = document.querySelectorAll('.card');
-    const dotsContainer = document.getElementById('dots');
-    let current = 0;
+</main>
 
-    function updateCarousel() {
-      cards.forEach((card, index) => {
-        card.classList.toggle('active', index === current);
-      });
-      updateDots();
-    }
+<script>
+  function sendCheckoutEventAndRedirect(event, url) {
+    event.preventDefault();
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'fb_initiate_checkout' });
+    setTimeout(() => {
+      window.open(url, '_blank');
+    }, 150);
+  }
 
-    function updateDots() {
-      dotsContainer.innerHTML = '';
-      cards.forEach((_, index) => {
-        const dot = document.createElement('span');
-        dot.className = 'dot' + (index === current ? ' active' : '');
-        dotsContainer.appendChild(dot);
-      });
-    }
+  document.getElementById('btn-avista').addEventListener('click', function(e) {
+    sendCheckoutEventAndRedirect(e, this.href);
+  });
 
-    function nextCard() {
-      current = (current + 1) % cards.length;
-      updateCarousel();
-    }
+  document.getElementById('btn-recorrente').addEventListener('click', function(e) {
+    sendCheckoutEventAndRedirect(e, this.href);
+  });
+</script>
 
-    function prevCard() {
-      current = (current - 1 + cards.length) % cards.length;
-      updateCarousel();
-    }
-
-    let xStart = null;
-
-    function handleTouchStart(evt) {
-      xStart = evt.touches[0].clientX;
-    }
-
-    function handleTouchMove(evt) {
-      if (!xStart) return;
-      let xEnd = evt.touches[0].clientX;
-      let xDiff = xStart - xEnd;
-      if (Math.abs(xDiff) > 50) {
-        if (xDiff > 0) nextCard();
-        else prevCard();
-        xStart = null;
-      }
-    }
-
-
-    // Suporte a arraste no desktop
-    let isDragging = false;
-    let startX = 0;
-
-    const carouselContainer = document.querySelector('.carousel-container');
-
-    carouselContainer.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      startX = e.clientX;
-    });
-
-    carouselContainer.addEventListener('mouseup', (e) => {
-      if (!isDragging) return;
-      const diff = startX - e.clientX;
-      if (Math.abs(diff) > 50) {
-        if (diff > 0) nextCard();
-        else prevCard();
-      }
-      isDragging = false;
-    });
-
-    carouselContainer.addEventListener('mouseleave', () => {
-      isDragging = false;
-    });
-
-
-    updateCarousel();
-
-  </script>
 </body>
 </html>
