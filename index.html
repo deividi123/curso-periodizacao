@@ -286,24 +286,49 @@ ul li {
     </ul>
   </section>
 
-<section aria-labelledby="aula-gratuita" class="aulagratis">
-  <h2 id="beneficios-title">Assista a uma aula totalmente gratuita</h2>
-  <ul>
-    <li>✅ <strong>Clique e assista a uma aula gratuita</strong></li>
-  </ul>
+<section aria-labelledby="aula-gratuita" class="aulagratis" style="position:relative; overflow:hidden; height:100vh;">
+  
+  <!-- Vídeo de fundo -->
+  <iframe 
+    id="videoAula" 
+    src="https://www.youtube.com/embed/IdzUXfGtRGk?autoplay=1&mute=1&loop=1&playlist=IdzUXfGtRGk&controls=0&modestbranding=1&rel=0&enablejsapi=1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media; picture-in-picture" 
+    style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;">
+  </iframe>
 
-  <!-- Vídeo do YouTube com autoplay e sem som -->
-  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px;">
-    <iframe 
-      src="https://www.youtube.com/embed/IdzUXfGtRGk?autoplay=1&mute=1&loop=1&playlist=IdzUXfGtRGk&controls=0&modestbranding=1&rel=0" 
-      title="Aula gratuita" 
-      frameborder="0" 
-      allow="autoplay; encrypted-media; picture-in-picture" 
-      allowfullscreen 
-      style="position:absolute; top:0; left:0; width:100%; height:100%;">
-    </iframe>
+  <!-- Conteúdo por cima -->
+  <div style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; color:white; text-align:center; padding:20px;">
+    <h2 id="beneficios-title" style="font-size:2rem; margin-bottom:10px;">Assista a uma aula totalmente gratuita</h2>
+    <ul style="list-style:none; padding:0; margin:0; font-size:1.2rem;">
+      <li>✅ <strong>Clique e assista a uma aula gratuita</strong></li>
+    </ul>
+    <button id="btnSom" style="margin-top:20px; padding:10px 20px; font-size:1rem; cursor:pointer; border:none; border-radius:8px; background:#ff0000; color:white;">
+      🔊 Ativar som
+    </button>
   </div>
+
 </section>
+
+<script>
+  let player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('videoAula');
+  }
+
+  document.getElementById('btnSom').addEventListener('click', () => {
+    if (player) {
+      player.unMute();
+      player.setVolume(100);
+    }
+  });
+
+  // Carrega API do YouTube
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+</script>
+
 
 
   <!-- MÓDULOS -->
