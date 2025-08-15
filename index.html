@@ -286,30 +286,31 @@ ul li {
     </ul>
   </section>
 
-<section aria-labelledby="aula-gratuita" class="aulagratis" style="position:relative; overflow:hidden; height:100vh;">
-  
-  <!-- Vídeo de fundo sem bordas -->
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; z-index:-1;">
+<section aria-labelledby="aula-gratuita" class="aulagratis">
+  <h2 id="beneficios-title">Assista a uma aula totalmente gratuita</h2>
+  <ul>
+    <li>✅ <strong>Clique e assista a uma aula gratuita</strong></li>
+  </ul>
+
+  <!-- Vídeo do YouTube com autoplay e sem som -->
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px;">
     <iframe 
-      id="videoAula" 
+      id="videoAula"
       src="https://www.youtube.com/embed/IdzUXfGtRGk?autoplay=1&mute=1&loop=1&playlist=IdzUXfGtRGk&controls=0&modestbranding=1&rel=0&enablejsapi=1" 
+      title="Aula gratuita" 
       frameborder="0" 
       allow="autoplay; encrypted-media; picture-in-picture" 
-      style="width:100vw; height:56.25vw; min-height:100vh; min-width:177.77vh; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+      allowfullscreen 
+      style="position:absolute; top:0; left:0; width:100%; height:100%;">
     </iframe>
   </div>
 
-  <!-- Conteúdo por cima -->
-  <div style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; color:white; text-align:center; padding:20px;">
-    <h2 id="beneficios-title" style="font-size:2rem; margin-bottom:10px;">Assista a uma aula totalmente gratuita</h2>
-    <ul style="list-style:none; padding:0; margin:0; font-size:1.2rem;">
-      <li>✅ <strong>Clique e assista a uma aula gratuita</strong></li>
-    </ul>
-    <button id="btnSom" style="margin-top:20px; padding:10px 20px; font-size:1rem; cursor:pointer; border:none; border-radius:8px; background:#ff0000; color:white;">
+  <!-- Botão para ativar som -->
+  <div style="margin-top:10px; text-align:center;">
+    <button id="btnSom" style="padding:10px 20px; font-size:1rem; cursor:pointer; border:none; border-radius:8px; background:#ff0000; color:white;">
       🔊 Ativar som
     </button>
   </div>
-
 </section>
 
 <script>
@@ -330,6 +331,7 @@ ul li {
   tag.src = "https://www.youtube.com/iframe_api";
   document.body.appendChild(tag);
 </script>
+
 
 
 
